@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 3D Background (starts behind hero, fades by end of scroll) -->
+    <div id="canvas-3d-background" aria-hidden="true"></div>
+    <!-- Gradient Background Orbs -->
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">PORTFOLIO</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="theme-toggle" id="themeToggle">🌙 Dark</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Ayush Ghai</h1>
+        <p class="subtitle">Full Stack Developer | UI/UX Enthusiast | Data analysis| Creative Technologist</p>
+        <p>Creating beautiful digital experiences with cutting-edge technologies and modern design principles.</p>
+        <a href="#contact" class="cta-button">Get In Touch</a>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>
+                I’m a dedicated Software Engineer and aspiring Data Analyst with a strong interest in solving real-world problems through technology and data-driven insights. I work with HTML, CSS, Bootstrap, Node.js, React, and Python to build efficient, user-friendly web applications backed by reliable data systems.
+
+I have contributed to impactful projects such as a real-time election management system, where I helped design secure databases and implement live vote counting, improving transparency, accuracy, and efficiency while reducing manual effort and fraudulent activity.
+
+In the healthcare domain, I developed a Python-based backend for an IoT intravenous fluid monitoring system, processing sensor data and generating timely alerts to support better patient care.
+
+Alongside development, I enjoy working with data analysis, visualization, and analytics tools including Python, Excel, IBM Cognos, MySQL, and Jupyter Notebook to uncover insights and support informed decision-making.
+
+I’m always eager to learn, collaborate, and contribute to meaningful, data-driven solutions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Frontend Development</h3>
+                <ul class="skill-list">
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>React.js & Next.js</li>
+                    <li>Tailwind CSS</li>
+                    <li>Responsive Design</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Backend Development</h3>
+                <ul class="skill-list">
+                    <li>Node.js & Express</li>
+                    <li>Python </li>
+                    <li>RESTful APIs</li>
+                   
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Database & Cloud</h3>
+                <ul class="skill-list">
+                    <li>MongoDB</li>
+                    <li>PostgreSQL</li>
+                    <li>MySQL</li>
+                    <li>Firebase</li>
+                   
+                </ul>
+            </div>
+            <div class="skill-category">
+        <h3>AI / ML & Data Analytics</h3>
+        <ul class="skill-list">
+            <li>Python for Data Analysis</li>
+            <li>Pandas, NumPy</li>
+            <li>Matplotlib, Seaborn</li>
+            <li>Machine Learning (Scikit-Learn)</li>
+            <li>Deep Learning Basics (CNNs)</li>
+            <li>Jupyter Notebook</li>
+            <li>IBM Cognos Analytics</li>
+        </ul>
+    </div>
+
+            <div class="skill-category">
+                <h3>Tools & Design</h3>
+                <ul class="skill-list">
+                    <li>Git & GitHub</li>
+                    <li>Figma & Adobe XD</li>
+                    <li>CI/CD Pipelines</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">🩺</div>
+                <div class="project-content">
+                    <h3>AI-Based Tuberculosis Image Detection</h3>
+                    <p>Predictive analytics project: normalized chest X-ray datasets for feature extraction, trained a CNN achieving 92% accuracy in TB detection. Built a React web interface for easy model interaction and performed data analysis on imaging patterns to improve diagnostic reliability.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">CNN</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Data Analysis</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/AI-Maverik-s/AI-Tuberculosis-Detection-System" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">😷</div>
+                <div class="project-content">
+                    <h3>Face Mask Detection (YOLOv8)</h3>
+                    <p>Real-time detection of people with mask, without mask, or wearing a mask incorrectly using YOLOv8, wrapped in a Streamlit web app and deployed on Hugging Face Spaces.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">YOLOv8</span>
+                        <span class="tech-tag">Computer Vision</span>
+                        <span class="tech-tag">Streamlit</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/GhaiAyush/Face-mask-detection" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+                        <a href="https://huggingface.co/spaces/ayushghai/face-mask-detection" target="_blank" rel="noopener noreferrer" class="btn">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">🟩</div>
+                <div class="project-content">
+                    <h3>Node App</h3>
+                    <p>A starter Node.js demo app highlighting routing basics and server-side fundamentals.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/GhaiAyush/Node-app" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">🎧</div>
+                <div class="project-content">
+                    <h3>Live Gaming Dashboard (UI/UX)</h3>
+                    <p>A modern, dark-themed gaming dashboard UI/UX concept designed in Figma, focused on game discovery, live streamers, wallet analytics, and personalized insights.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">UI/UX</span>
+                        <span class="tech-tag">Design System</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/GhaiAyush/Live_gaming_dashboard" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">🤖</div>
+                <div class="project-content">
+                    <h3>JAM – Python Voice Assistant</h3>
+                    <p>A Python-based voice assistant that listens for the keyword \"jam\" and can play songs, tell the time, search Wikipedia, tell jokes, and respond conversationally.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Speech Recognition</span>
+                        <span class="tech-tag">Text-to-Speech</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/GhaiAyush/Jam" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">🎮</div>
+                <div class="project-content">
+                    <h3>Valorant Website</h3>
+                    <p>A frontend landing-page demo showcasing layout, styling, and visual polish inspired by Valorant.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/GhaiAyush/Valorant-website" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <div class="certifications-container">
+            <div class="cert-card">
+                <span class="cert-icon">📚</span>
+                <h3>Machine Learning with Data Science</h3>
+                <p>CipherSchools · Jul 2025</p>
+            </div>
+            <div class="cert-card">
+                <span class="cert-icon">📊</span>
+                <h3>Introduction to Data Science</h3>
+                <p>Infosys · Jun 2025</p>
+            </div>
+            <div class="cert-card">
+                <span class="cert-icon">⚙️</span>
+                <h3>Software Engineering</h3>
+                <p>Saylor Academy · Dec 2024</p>
+            </div>
+            <div class="cert-card">
+                <span class="cert-icon">🐍</span>
+                <h3>Data Fundamentals using Python</h3>
+                <p>IBM · Nov–Dec 2024</p>
+            </div>
+            <div class="cert-card">
+                <span class="cert-icon">📈</span>
+                <h3>Data Visualization using Python</h3>
+                <p>IBM · Oct–Nov 2024</p>
+            </div>
+            <div class="cert-card">
+                <span class="cert-icon">🅰️</span>
+                <h3>Front-End JavaScript Frameworks: Angular</h3>
+                <p>Coursera · Sept–Oct 2022</p>
+            </div>
+            <div class="cert-card">
+                <span class="cert-icon">⚛️</span>
+                <h3>Front-End Web Development with React</h3>
+                <p>Coursera · Aug–Sept 2022</p>
+            </div>
+            <div class="cert-card">
+                <span class="cert-icon">🌐</span>
+                <h3>Introduction to Web Development with HTML, CSS, JavaScript</h3>
+                <p>Coursera · Jun–Sept 2022</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-container">
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p>📧 ayushghay@gmail.com</p>
+                <p>📱 +91-9877075404</p>
+                <div class="social-links">
+                    <a href="https://github.com/GhaiAyush" target="_blank" rel="noopener noreferrer" title="GitHub">GitHub</a>
+                    <a href="https://www.linkedin.com/in/ayush-ghai-/" target="_blank" rel="noopener noreferrer" title="LinkedIn">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Modern Gradients Portfolio. Designed with passion and creativity.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="background-3d.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
